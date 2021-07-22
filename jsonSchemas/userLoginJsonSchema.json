@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "examples": [
+        {
+            "username": "testUser",
+            "password": "password1"
+        }
+    ],
+    "required": [
+        "username",
+        "password"
+    ],
+    "properties": {
+        "username": {
+            "type": "string",
+            "minLength" : 3,
+            "maxLength": 25,
+            "examples": [
+                "testUser"
+            ]
+        },
+        "password": {
+            "type": "string",
+            "minLength" : 5,
+            "examples": [
+                "password1"
+            ]
+        }
+    },
+    "additionalProperties": false
+}
